@@ -1,0 +1,176 @@
+body {
+  /*
+  background-image: url(./assets/assets/bg-mobile.jpg);
+  background-repeat: no-repeat;
+  background-position:top center;
+  background-size: cover;
+  */
+
+  /*background: color image repeat position/size * esse é uma agrupamento/atalho de tags do css onde é possivel resumir todo a estrutura acima em apenas uma linha de codigo.*/
+
+  background: var(--bg-url) no-repeat top center/cover;
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --text-color: white;
+  --bg-url: url(./fundo.mobile.jpg.jpg);
+  --stroke-color: rgba(255, 255, 255, 0.5);
+  --surface-color: rgba(236, 238, 243, 0.233);
+  --surface-color-houver: rgba(0, 0, 0, 0.5);
+  --heighlight-color: rgba(255, 255, 255, 0.5);
+  --switch-bg-rul: url( ./moon-stars.svg);
+}
+
+
+.ligth{
+  --text-color: black;
+  --bg-url: url(./fundo.mobile.ligth.jpg.jpg);
+  --stroke-color: rgba(0, 0, 0, 0.5);
+  --surface-color: rgba(31, 65, 139, 0.05);
+  --surface-color-houver: rgba(244, 245, 248, 0.05);
+  --heighlight-color: rgba(0, 0, 0, 0.1);
+  --switch-bg-rul: url( ./sun.svg);
+}
+
+body *{
+  font-family: "Inter", sans-serif;
+  color: var(--text-color);
+}
+
+#container{
+  /*largura*/
+  width: 360px;
+  /*Altura*/
+  height: 712px;
+  /*borda*/
+  /*border: 1px solid white;*/
+  /*margem geral*/
+  margin: 56px auto 0px;
+
+  padding: 0 24px;
+  
+}
+
+#profile{
+  text-align: center;
+  padding: 24px;
+}
+
+#profile img{
+  width: 112px;
+  
+  /*css triks, site para aprender truques de css*/
+}
+
+#profile p{
+  font-weight: 500;
+  font-weight: 24px;
+  margin-top: 8;
+}
+
+#switch {
+  position: relative;
+  width: 64px;
+  margin: 4px auto;
+
+
+}
+
+#switch button{
+  width: 32px;
+  height: 32px;
+  background: white var(--switch-bg-rul) no-repeat center;
+  border: 0;
+  border-radius: 50%;  
+  position: absolute;
+  left: 0;
+  z-index: 1;
+  transform: translateY(-50%);
+  top: 50%;
+  
+
+}
+
+.ligth #switch button{
+  right: 0;
+  left: initial;
+
+}
+
+#switch span{
+  display: block;
+  width: 64px;
+  height: 24px;
+  background: var(--surface-color);
+  border: 1px solid var(--stroke-color);
+  backdrop-filter: blur(4px);
+  --webkit-backdrop-filter: blur(4px);
+  border-radius: 9999px;
+}
+
+
+
+ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 24px 0;
+
+}
+
+li a{
+  color: var(--text-color);
+}
+
+ul li a {
+  display: flex;
+  justify-content: center;
+  padding: 16px 24px;
+  align-items: center;
+  background: var(--surface-color);
+  border: 1px solid var(--stroke-color);
+  border-radius: 8px;
+  --webkit-backdrop-filter: blur(4px);
+  text-decoration: none;
+  font-weight: 500;
+  transition: backgroud 0.5s;
+}
+
+ul li a:hover{
+background: var(--surface-color-houver);
+border: 1px solid var(--text-color);
+}
+
+#social-links{
+  display: flex;
+ 
+  font-size: 24px;
+  justify-content: center;
+  padding: 24px 0;
+  
+}
+#social-links a{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+  border-radius: 50%;
+}
+#social-links :hover {
+background: var(--heighlight-color)
+
+}
+
+footer {
+  padding: 24px 0;
+  text-align: center;
+  font-size: 12px;
+
+}
+
