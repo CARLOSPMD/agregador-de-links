@@ -44,7 +44,9 @@ body *{
 
 #container{
   /*largura*/
-  width: 360px;
+  width: 100%;
+  /*largura maxima*/
+  max-width: 588px;
   /*Altura*/
   height: 712px;
   /*borda*/
