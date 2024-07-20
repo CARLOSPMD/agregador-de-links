@@ -176,3 +176,14 @@ footer {
 
 }
 
+@media (min-width: 700px){ 
+  :root {
+    --bg-url: url(./desctop.img.jpg);
+  }
+
+  .ligth {
+    --bg-url: url(./desctop.ligth.img.jpg);
+  }
+
+}
+
