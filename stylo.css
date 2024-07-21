@@ -18,7 +18,7 @@ body {
 
 :root {
   --text-color: white;
-  --bg-url: url(./fundo.mobile.jpg.jpg);
+  --bg-url: url(./assets/fundo.mobile.jpg.jpg);
   --stroke-color: rgba(255, 255, 255, 0.5);
   --surface-color: rgba(236, 238, 243, 0.233);
   --surface-color-houver: rgba(0, 0, 0, 0.5);
@@ -29,7 +29,7 @@ body {
 
 .ligth{
   --text-color: black;
-  --bg-url: url(./fundo.mobile.ligth.jpg.jpg);
+  --bg-url: url(./assets/fundo.mobile.ligth.jpg.jpg);
   --stroke-color: rgba(0, 0, 0, 0.5);
   --surface-color: rgba(31, 65, 139, 0.05);
   --surface-color-houver: rgba(244, 245, 248, 0.05);
@@ -181,11 +181,11 @@ footer {
 
 @media (min-width: 700px){ 
   :root {
-    --bg-url: url(./desctop.img.jpg);
+    --bg-url: url(./assets/desctop.img.jpg);
   }
 
   .ligth {
-    --bg-url: url(./desctop.ligth.img.jpg);
+    --bg-url: url(./assets/desctop.ligth.img.jpg);
   }
 
 }

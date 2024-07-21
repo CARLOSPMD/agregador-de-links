@@ -18,10 +18,10 @@ function toggleMode() {
 
    
     if (html.classList.contains('ligth')) {
-        img.setAttribute('src', './foto.perfil.lingth.jpg.png',)
+        img.setAttribute('src', './assets/foto.perfil.lingth.jpg.png',)
        
     } else{
-        img.setAttribute('src', './foto.perfil.jpg.png')
+        img.setAttribute('src', './assets/foto.perfil.jpg.png')
        
  /*troca de descrição da imagem*/
     }
